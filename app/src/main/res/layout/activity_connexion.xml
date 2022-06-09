@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/constraintlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/lunchbg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ConnexionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="54dp">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:scaleX="1.6"
+            android:scaleY="1.4"
+            android:src="@drawable/bowl_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Go4Lunch"
+            android:textColor="#ffffff"
+            android:textSize="70sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/find_a_nice_restaurant_and_invite_your_co_workers_for_lunch"
+            android:textColor="#ffffff"
+            android:textSize="12.5sp"
+            android:textStyle="italic">
+
+        </TextView>
+
+        <FrameLayout
+            android:id="@+id/FrameLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="100dp">
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/fb"
+                android:layout_width="292dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_button_fb"
+
+                android:clickable="true"
+                android:drawableStart="@drawable/fb_icon"
+                android:focusable="true"
+                android:fontFamily="@font/roboto"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:text="@string/sign_in_with_facebook"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="13sp"
+                android:textStyle="bold">
+
+            </Button>
+
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="0dp">
+
+
+            <com.shobhitpuri.custombuttons.GoogleSignInButton
+                android:id="@+id/btn_sign_in"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/google_sign_in"
+                android:visibility="gone">
+
+            </com.shobhitpuri.custombuttons.GoogleSignInButton>
+
+            <Button
+                android:id="@+id/google_button"
+                android:layout_width="292dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_button_google"
+                android:clickable="true"
+                android:drawableStart="@drawable/icon_google"
+                android:focusable="true"
+                android:fontFamily="@font/roboto"
+                android:onClick="onClick"
+                android:paddingStart="15dp"
+                android:text="@string/sign_in_with_google"
+                android:textAllCaps="false"
+                android:textStyle="bold">
+
+            </Button>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

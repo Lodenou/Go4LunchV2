@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Go4LunchV2</string>
+
+        <string name="title_activity_main">MainActivity</string>
+        <string name="navigation_drawer_open">Open navigation drawer</string>
+        <string name="navigation_drawer_close">Close navigation drawer</string>
+        <string name="nav_header_title">Android Studio</string>
+        <string name="nav_header_subtitle">android.studio@android.com</string>
+        <string name="nav_header_desc">Navigation header</string>
+        <string name="action_settings">Paramètres</string>
+
+        <string name="menu_yourlunch">Votre restaurant</string>
+        <string name="menu_settings">Paramètres</string>
+        <string name="menu_logout">Se déconnecter</string>
+        <string name="hello_blank_fragment">Hello blank fragment</string>
+        <string name="title_activity_settings">SettingsActivity</string>
+
+        <!-- Preference Titles -->
+        <string name="messages_header">Messages</string>
+        <string name="sync_header">Sync</string>
+
+        <!-- Messages Preferences -->
+        <string name="signature_title">Votre signature</string>
+        <string name="reply_title">Default reply action</string>
+
+        <!-- Sync Preferences -->
+        <string name="sync_title">Sync email periodically</string>
+        <string name="attachment_title">Download incoming attachments</string>
+        <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+        <string name="attachment_summary_off">Only download attachments when manually requested</string>
+        <string name="title_activity_your_lunch">Votre restaurant</string>
+        <string name="large_text">"Votre restaurant"</string>
+
+        <string name="camera_and_location_rationale"> Autoriser la permission pour la localisation? </string>
+
+        <!-- NOTIFICATION SERVICE -->
+        <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+        <string name="notification_title">"Vous avez reçu une notification"</string>
+
+        <!-- MENTOR_CHAT ACTIVITY -->
+        <string name="toolbar_title_mentor_chat_activity">Chats de discussions</string>
+        <string name="text_input_title_mentor_chat_activity">Composer votre message</string>
+        <string name="button_title_mentor_chat_activity">ENVOYER</string>
+        <string name="text_view_mentor_chat_error">Ce fil de discussion ne contient pour le moment aucun message&#8230;</string>
+        <string name="popup_title_permission_files_access">Cette application a besoin de permission pour fonctionner.</string>
+        <string name="toast_title_no_image_chosen">Aucune image choisie&#8230;</string>
+        <string name="search">Chercher</string>
+        <string name="find_a_nice_restaurant_and_invite_your_co_workers_for_lunch">Trouve un restaurant sympa et mange avec tes collègues !</string>
+        <string name="sign_in_with_facebook">Se connecter avec Facebook</string>
+        <string name="sign_in_with_google">Se connecter avec Google</string>
+        <string name="your_restaurant">Votre restaurant</string>
+        <string name="french_restaurant_12_rue_machin_poissonni_re">French restaurant - 12 rue machin Poissonnière</string>
+        <string name="call">Appel</string>
+        <string name="like">Aime</string>
+        <string name="website">SiteWeb</string>
+        <string name="dsdsqdsqqdsdsqdsqdsq">dsdsqdsqqdsdsqdsqdsq</string>
+        <string name="dsdsqd">dsdsqd</string>
+        <string name="_3">(3)</string>
+        <string name="go4lunch">Go4Lunch</string>
+        <string name="messages">Messages</string>
+        <string name="autoriser_les_notifications">Autoriser les notifications </string>
+        <string name="yes"> Oui </string>
+        <string name="Oui">Oui</string>
+        <string name="chat">Chat</string>
+        <string name="iseating">  mange à </string>
+        <string name="noresto">" n\'a pas encore décidé "</string>
+        <string name="nouser">Pas de nom d\'utilisateur</string>
+
+    </resources>
