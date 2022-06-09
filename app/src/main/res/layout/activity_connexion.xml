@@ -90,18 +90,18 @@
             android:layout_height="60dp"
             android:layout_marginTop="0dp">
 
+//TODO REGARDER SI CE BOUTON EST INDISPENSABLE
+<!--            <com.shobhitpuri.custombuttons.GoogleSignInButton-->
+<!--                android:id="@+id/btn_sign_in"-->
+<!--                android:layout_width="300dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:text="@string/google_sign_in"-->
+<!--                android:visibility="gone">-->
 
-            <com.shobhitpuri.custombuttons.GoogleSignInButton
-                android:id="@+id/btn_sign_in"
-                android:layout_width="300dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="10dp"
-                android:text="@string/google_sign_in"
-                android:visibility="gone">
-
-            </com.shobhitpuri.custombuttons.GoogleSignInButton>
+<!--            </com.shobhitpuri.custombuttons.GoogleSignInButton>-->
 
             <Button
                 android:id="@+id/google_button"
