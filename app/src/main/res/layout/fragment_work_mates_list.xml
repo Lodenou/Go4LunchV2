@@ -12,4 +12,4 @@
     android:layout_marginRight="16dp"
     app:layoutManager="LinearLayoutManager"
     tools:context=".ui.fragments.WorkmatesFragment"
-    tools:listitem="@layout/fragment_work_mates" />
+    tools:listitem="@layout/fragment_work_mates_item" />

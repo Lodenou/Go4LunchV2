@@ -12,6 +12,8 @@ import androidx.fragment.app.Fragment;
 import com.lodenou.go4lunchv2.R;
 
 public class ListViewFragment extends Fragment {
+
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,5 +23,9 @@ public class ListViewFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_list_view_list, container, false);
+    }
+
+    public static ListViewFragment newInstance() {
+        return new ListViewFragment();
     }
 }

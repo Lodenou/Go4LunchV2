@@ -22,4 +22,8 @@ public class WorkmatesFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_work_mates_list, container, false);
     }
+
+    public static WorkmatesFragment newInstance() {
+        return new WorkmatesFragment();
+    }
 }
