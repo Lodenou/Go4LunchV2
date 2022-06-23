@@ -54,32 +54,34 @@
             android:layout_marginTop="100dp">
 
             <com.facebook.login.widget.LoginButton
-                android:id="@+id/login_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:visibility="gone" />
-
-            <Button
-                android:id="@+id/fb"
+                android:id="@+id/login_button_fb"
                 android:layout_width="292dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:background="@drawable/rounded_button_fb"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:minHeight="48dp"
+                android:paddingTop="15sp"
+                android:paddingBottom="15sp" />
 
-                android:clickable="true"
-                android:drawableStart="@drawable/fb_icon"
-                android:focusable="true"
-                android:fontFamily="@font/roboto"
-                android:onClick="onClick"
-                android:paddingLeft="15dp"
-                android:text="@string/sign_in_with_facebook"
-                android:textAllCaps="false"
-                android:textColor="#ffffff"
-                android:textSize="13sp"
-                android:textStyle="bold">
+            <!--            <Button-->
+<!--                android:id="@+id/fb"-->
+<!--                android:layout_width="292dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:background="@drawable/rounded_button_fb"-->
 
-            </Button>
+<!--                android:clickable="true"-->
+<!--                android:drawableStart="@drawable/fb_icon"-->
+<!--                android:focusable="true"-->
+<!--                android:fontFamily="@font/roboto"-->
+<!--                android:onClick="onClick"-->
+<!--                android:paddingLeft="15dp"-->
+<!--                android:text="@string/sign_in_with_facebook"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#ffffff"-->
+<!--                android:textSize="13sp"-->
+<!--                android:textStyle="bold">-->
+
+<!--            </Button>-->
 
 
 

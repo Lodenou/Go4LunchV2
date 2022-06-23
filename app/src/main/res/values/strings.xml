@@ -1,75 +1,78 @@
 <resources>
     <string name="app_name">Go4LunchV2</string>
 
-        <!-- FACEBOOK PURPOSE -->
+    <!-- FACEBOOK PURPOSE -->
+    <string name="facebook_app_id" translatable="false">3402787136624128</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb3402787136624128</string>
+    <string name="facebook_client_token" translatable="false">04fa9463d869209b56d230ce95e1b210</string>
 
-        <string name="title_activity_main">MainActivity</string>
-        <string name="navigation_drawer_open">Open navigation drawer</string>
-        <string name="navigation_drawer_close">Close navigation drawer</string>
-        <string name="nav_header_title">Android Studio</string>
-        <string name="nav_header_subtitle">android.studio@android.com</string>
-        <string name="nav_header_desc">Navigation header</string>
-        <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
 
-        <string name="menu_yourlunch">YOUR LUNCH</string>
-        <string name="menu_settings">SETTINGS</string>
-        <string name="menu_logout">LOGOUT</string>
-        <string name="hello_blank_fragment">Hello blank fragment</string>
-        <string name="title_activity_settings">SettingsActivity</string>
+    <string name="menu_yourlunch">YOUR LUNCH</string>
+    <string name="menu_settings">SETTINGS</string>
+    <string name="menu_logout">LOGOUT</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_settings">SettingsActivity</string>
 
-        <!-- Preference Titles -->
-        <string name="messages_header">Messages</string>
-        <string name="sync_header">Sync</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
 
-        <!-- Messages Preferences -->
-        <string name="signature_title">Your signature</string>
-        <string name="reply_title">Default reply action</string>
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
 
-        <!-- Sync Preferences -->
-        <string name="sync_title">Sync email periodically</string>
-        <string name="attachment_title">Download incoming attachments</string>
-        <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
-        <string name="attachment_summary_off">Only download attachments when manually requested</string>
-        <string name="title_activity_your_lunch">Your restaurant</string>
-        <string name="large_text">
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_your_lunch">Your restaurant</string>
+    <string name="large_text">
         "Your restaurant"
     </string>
 
-        <string name="camera_and_location_rationale"> Allow permission for position? </string>
+    <string name="camera_and_location_rationale"> Allow permission for position? </string>
 
-        <!-- NOTIFICATION SERVICE -->
-        <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
-        <string name="notification_title">"You received a notification"</string>
+    <!-- NOTIFICATION SERVICE -->
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="notification_title">"You received a notification"</string>
 
-        <!-- MENTOR_CHAT ACTIVITY -->
-        <string name="toolbar_title_mentor_chat_activity">Discussion chat</string>
-        <string name="text_input_title_mentor_chat_activity">Compose you message</string>
-        <string name="button_title_mentor_chat_activity">Send</string>
-        <string name="text_view_mentor_chat_error">this discussion doesn\'t contain any image&#8230;</string>
-        <string name="popup_title_permission_files_access">This app needs permission to works</string>
-        <string name="toast_title_no_image_chosen">No image chosen&#8230;</string>
-        <string name="search">Search</string>
-        <string name="find_a_nice_restaurant_and_invite_your_co_workers_for_lunch">Find a nice restaurant and invite your co-workers for lunch!</string>
-        <string name="sign_in_with_facebook">Sign in with Facebook</string>
-        <string name="sign_in_with_google">Sign in with Google</string>
-        <string name="your_restaurant">Your restaurant</string>
-        <string name="french_restaurant_12_rue_machin_poissonni_re">French restaurant - 12 rue machin Poissonnière</string>
-        <string name="call">Call</string>
-        <string name="like">Like</string>
-        <string name="website">Website</string>
-        <string name="dsdsqdsqqdsdsqdsqdsq">dsdsqdsqqdsdsqdsqdsq</string>
-        <string name="dsdsqd">dsdsqd</string>
-        <string name="_3">(3)</string>
-        <string name="go4lunch">Go4Lunch</string>
-        <string name="messages">Messages</string>
-        <string name="autoriser_les_notifications">Allow notifications ?</string>
-        <string name="yes">Yes</string>
-        <string name="Oui">Yes</string>
-        <string name="chat">Chat</string>
-        <string name="iseating"> is eating at </string>
-        <string name="noresto">\" hasn\'t decided yet\"</string>
-        <string name="nouser">No username</string>
+    <!-- MENTOR_CHAT ACTIVITY -->
+    <string name="toolbar_title_mentor_chat_activity">Discussion chat</string>
+    <string name="text_input_title_mentor_chat_activity">Compose you message</string>
+    <string name="button_title_mentor_chat_activity">Send</string>
+    <string name="text_view_mentor_chat_error">this discussion doesn\'t contain any image&#8230;</string>
+    <string name="popup_title_permission_files_access">This app needs permission to works</string>
+    <string name="toast_title_no_image_chosen">No image chosen&#8230;</string>
+    <string name="search">Search</string>
+    <string name="find_a_nice_restaurant_and_invite_your_co_workers_for_lunch">Find a nice restaurant and invite your co-workers for lunch!</string>
+    <string name="sign_in_with_facebook">Sign in with Facebook</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="your_restaurant">Your restaurant</string>
+    <string name="french_restaurant_12_rue_machin_poissonni_re">French restaurant - 12 rue machin Poissonnière</string>
+    <string name="call">Call</string>
+    <string name="like">Like</string>
+    <string name="website">Website</string>
+    <string name="dsdsqdsqqdsdsqdsqdsq">dsdsqdsqqdsdsqdsqdsq</string>
+    <string name="dsdsqd">dsdsqd</string>
+    <string name="_3">(3)</string>
+    <string name="go4lunch">Go4Lunch</string>
+    <string name="messages">Messages</string>
+    <string name="autoriser_les_notifications">Allow notifications ?</string>
+    <string name="yes">Yes</string>
+    <string name="Oui">Yes</string>
+    <string name="chat">Chat</string>
+    <string name="iseating"> is eating at </string>
+    <string name="noresto">\" hasn\'t decided yet\"</string>
+    <string name="nouser">No username</string>
 
 
-    </resources>
+</resources>
