@@ -155,7 +155,7 @@ public class ConnexionActivity extends AppCompatActivity {
 
     private void facebookSignIn() {
         mCallbackManager = CallbackManager.Factory.create();
-        binding.loginButtonFb.setReadPermissions("email", "public_profile");
+        binding.loginButtonFb.setPermissions("email", "public_profile");
         binding.loginButtonFb.registerCallback(mCallbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {

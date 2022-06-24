@@ -8,13 +8,16 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewpager.widget.ViewPager;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.facebook.login.LoginManager;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -70,14 +73,27 @@ public class MainActivity extends AppCompatActivity {
         // User logged in
         // Get user info
         else {
-            String email = firebaseUser.getEmail();
+            ImageView personalphoto = headerView.findViewById(R.id.user_photo);
+            TextView navUserName = headerView.findViewById(R.id.textview_user_name);
             TextView navUserMail = headerView
                     .findViewById(R.id.nav_user_mail);
+            // set email in nav view
+            String email = firebaseUser.getProviderData().get(0).getEmail();
             navUserMail.setText(email);
             Toast.makeText(this, email, Toast.LENGTH_LONG).show();
-
+            // set username in nav view
+            String username = firebaseUser.getProviderData().get(0).getDisplayName();
+            navUserName.setText(username);
+            // set user profile photo
+            Uri userPhoto = firebaseUser.getProviderData().get(0).getPhotoUrl();
+            Glide.with(this)
+                    .load(userPhoto)
+                    .sizeMultiplier(0.1f)
+                    .circleCrop()
+                    .into(personalphoto);
         }
     }
+
 
     // 4 - Declare Subscription
     private Disposable disposable;
@@ -85,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onDestroy() {
         super.onDestroy();
+        logOut();
         this.disposeWhenDestroy();
     }
     // -----------------
