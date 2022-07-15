@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -27,6 +28,8 @@ import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.lodenou.go4lunchv2.R;
+import com.lodenou.go4lunchv2.data.Go4LunchApi;
+import com.lodenou.go4lunchv2.data.Go4LunchStreams;
 import com.lodenou.go4lunchv2.databinding.ActivityMainBinding;
 import com.lodenou.go4lunchv2.databinding.NavHeaderMainBinding;
 import com.lodenou.go4lunchv2.service.PageAdapter;
@@ -36,28 +39,21 @@ import io.reactivex.observers.DisposableObserver;
 
 public class MainActivity extends AppCompatActivity {
 
-//    private ActivityMainBinding binding;
     private FirebaseAuth mAuth;
-//    private NavHeaderMainBinding navViewBinding;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // view binding
-//        binding = ActivityMainBinding.inflate(getLayoutInflater());
-        // Add binding for nav_view
-//         navViewBinding = NavHeaderMainBinding.bind(binding.navView);
-//
-//        View view = binding.getRoot();
         setContentView(R.layout.activity_main);
-//        setContentView(view);
         mAuth = FirebaseAuth.getInstance();
         checkUser();
         createNavMenu();
         configureViewPagerAndTabs();
         setTabIcons();
         setNavMenuOnClicks();
+
     }
 
     private void checkUser() {
@@ -78,9 +74,11 @@ public class MainActivity extends AppCompatActivity {
             TextView navUserMail = headerView
                     .findViewById(R.id.nav_user_mail);
             // set email in nav view
-            String email = firebaseUser.getProviderData().get(0).getEmail();
-            navUserMail.setText(email);
-            Toast.makeText(this, email, Toast.LENGTH_LONG).show();
+
+                String email = firebaseUser.getProviderData().get(1).getEmail();
+                navUserMail.setText(email);
+                Toast.makeText(this, email, Toast.LENGTH_LONG).show();
+
             // set username in nav view
             String username = firebaseUser.getProviderData().get(0).getDisplayName();
             navUserName.setText(username);
@@ -95,62 +93,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    // 4 - Declare Subscription
-    private Disposable disposable;
 
     @Override
     public void onDestroy() {
         super.onDestroy();
         logOut();
-        this.disposeWhenDestroy();
-    }
-    // -----------------
-    // ACTIONS
-    // -----------------
-
-
-//        this.streamShowString();
-
-
-    // ------------------------------
-    //  Reactive X
-    // ------------------------------
-
-    // 1 - Create Observable
-    private Observable<String> getObservable() {
-        return Observable.just("Cool !");
-    }
-
-    // 2 - Create Subscriber
-
-    private DisposableObserver<String> getSubscriber() {
-        return new DisposableObserver<String>() {
-            @Override
-            public void onNext(String item) {
-//                textView.setText("Observable emits : "+item);
-            }
-
-            @Override
-            public void onError(Throwable e) {
-                Log.e("TAG", "On Error" + Log.getStackTraceString(e));
-            }
-
-            @Override
-            public void onComplete() {
-                Log.e("TAG", "On Complete !!");
-            }
-        };
-    }
-
-    // 3 - Create Stream and execute it
-    private void streamShowString() {
-        this.disposable = this.getObservable()
-                .subscribeWith(getSubscriber());
-    }
-
-    // 5 - Dispose subscription
-    private void disposeWhenDestroy() {
-        if (this.disposable != null && !this.disposable.isDisposed()) this.disposable.dispose();
     }
 
 
@@ -278,6 +225,8 @@ public class MainActivity extends AppCompatActivity {
         // FACEBOOK LOGOUT
         LoginManager.getInstance().logOut();
     }
+
+
 
 
 }

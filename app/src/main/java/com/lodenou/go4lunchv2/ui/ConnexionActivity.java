@@ -36,6 +36,7 @@ import com.lodenou.go4lunchv2.databinding.ActivityConnexionBinding;
 import com.facebook.FacebookSdk;
 
 import java.util.Arrays;
+import java.util.Objects;
 
 
 public class ConnexionActivity extends AppCompatActivity {
@@ -118,7 +119,7 @@ public class ConnexionActivity extends AppCompatActivity {
                         Log.d(TAG, "OnSuccess: Email" + email);
                         Log.d(TAG, "OnSuccess: uid" + uid);
                         // Check if user is new or existing
-                        if (authResult.getAdditionalUserInfo().isNewUser()) {
+                        if (Objects.requireNonNull(authResult.getAdditionalUserInfo()).isNewUser()) {
                             // User is new account created
                             Log.d(TAG, "OnSuccess: Account created...\n" + email);
                             Toast.makeText(ConnexionActivity.this, "Account created...\n" + email, Toast.LENGTH_SHORT).show();
@@ -162,6 +163,15 @@ public class ConnexionActivity extends AppCompatActivity {
                 Log.d(TAG, "facebook:onSuccess:" + loginResult);
                 FirebaseAuth.getInstance().addAuthStateListener(mAuthListener);
                 handleFacebookAccessToken(loginResult.getAccessToken());
+                // sign out with google
+                GoogleSignInOptions gso = new GoogleSignInOptions.
+                        Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).
+                        build();
+
+                GoogleSignInClient googleSignInClient = GoogleSignIn.getClient(ConnexionActivity.this, gso);
+                googleSignInClient.signOut();
+
+
             }
 
             @Override

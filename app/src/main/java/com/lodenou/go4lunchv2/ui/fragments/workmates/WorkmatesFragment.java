@@ -1,4 +1,4 @@
-package com.lodenou.go4lunchv2.ui.fragments;
+package com.lodenou.go4lunchv2.ui.fragments.workmates;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,9 +11,7 @@ import androidx.fragment.app.Fragment;
 
 import com.lodenou.go4lunchv2.R;
 
-public class ListViewFragment extends Fragment {
-
-
+public class WorkmatesFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,10 +20,10 @@ public class ListViewFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_list_view_list, container, false);
+        return inflater.inflate(R.layout.fragment_work_mates_list, container, false);
     }
 
-    public static ListViewFragment newInstance() {
-        return new ListViewFragment();
+    public static WorkmatesFragment newInstance() {
+        return new WorkmatesFragment();
     }
 }

@@ -7,9 +7,9 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 
-import com.lodenou.go4lunchv2.ui.fragments.ListViewFragment;
-import com.lodenou.go4lunchv2.ui.fragments.MapFragment;
-import com.lodenou.go4lunchv2.ui.fragments.WorkmatesFragment;
+import com.lodenou.go4lunchv2.ui.fragments.listview.ListViewFragment;
+import com.lodenou.go4lunchv2.ui.fragments.map.MapFragment;
+import com.lodenou.go4lunchv2.ui.fragments.workmates.WorkmatesFragment;
 
 
 public class PageAdapter extends FragmentPagerAdapter {
